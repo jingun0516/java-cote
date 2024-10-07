@@ -1,6 +1,6 @@
 package programmers;
 
-public class pm147355 {
+public class Pm147355 {
     public static int solution(String t, String p) {
         int answer = 0;
 
