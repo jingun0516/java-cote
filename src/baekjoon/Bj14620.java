@@ -43,7 +43,6 @@ public class Bj14620 {
                     plant(j, i, check);
                     dfs(j, i, cnt + 1, score, maps, check);
                     unplant(j, i, check);
-
                 }
             }
         }
