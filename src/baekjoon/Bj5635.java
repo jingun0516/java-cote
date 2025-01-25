@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Bj5635 {
-    public static class Human implements Comparable<Main.Human> {
+    public static class Human implements Comparable<Human> {
         private String name;
         private int year;
         private int month;
@@ -24,7 +24,7 @@ public class Bj5635 {
         }
 
         @Override
-        public int compareTo(Main.Human o) {
+        public int compareTo(Human o) {
             if(this.year != o.year) {
                 return Integer.compare(this.year, o.year);
             }
