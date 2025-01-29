@@ -41,7 +41,7 @@ public class Bj5635 {
 
         int N = sc.nextInt();
 
-        List<Main.Human> humans = new ArrayList<>();
+        List<Human> humans = new ArrayList<>();
 
         for(int i = 0; i < N; i++) {
             String name = sc.next();
@@ -49,7 +49,7 @@ public class Bj5635 {
             int month = sc.nextInt();
             int year = sc.nextInt();
 
-            humans.add(new Main.Human(name, year, month, day));
+            humans.add(new Human(name, year, month, day));
         }
 
         Collections.sort(humans);
