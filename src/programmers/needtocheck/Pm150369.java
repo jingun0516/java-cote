@@ -16,11 +16,8 @@ public class Pm150369 {
                 pickupSum -= cap;
                 cnt++;
             }
-            answer += (i+1) * 2 * cnt;
+            answer += (long) (i + 1) * 2 * cnt;
         }
-
-
-
 
         return answer;
     }
