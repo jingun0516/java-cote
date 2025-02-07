@@ -17,16 +17,16 @@ public class Bj2075 {
             }
         }
 
-        PriorityQueue<Main.Node> pq = new PriorityQueue<>();
+        PriorityQueue<Node> pq = new PriorityQueue<>();
 
         for(int x = 0; x < N; x++){
-            pq.add(new Main.Node(maps[N - 1][x], N - 1, x));
+            pq.add(new Node(maps[N - 1][x], N - 1, x));
         }
 
         int cnt = 0;
         while(!pq.isEmpty()){
             cnt++;
-            Main.Node node = pq.poll();
+            Node node = pq.poll();
             int value = node.getValue();
             int y = node.getY();
             int x = node.getX();
@@ -37,7 +37,7 @@ public class Bj2075 {
             }
 
             if(y >= 1) {
-                pq.add(new Main.Node(maps[y-1][x], y - 1, x));
+                pq.add(new Node(maps[y-1][x], y - 1, x));
             }
         }
 
